@@ -8,7 +8,7 @@
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
-		<java-version>1.6</java-version>
+		<java-version>1.8</java-version>
 		<org.springframework-version>4.2.4.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
@@ -179,6 +179,19 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
+            <plugin>
+
+				<artifactId>maven-war-plugin</artifactId>
+
+				<version>3.2.3</version>
+
+				<configuration>
+
+					<!-- <failOnMissingWebXml>false</failOnMissingWebXml> -->
+
+				</configuration>
+
+			</plugin>
         </plugins>
     </build>
 </project>
